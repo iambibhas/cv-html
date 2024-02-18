@@ -34,14 +34,13 @@
                         <div class="experience-designation">Senior Software Engineer</div>
                         <div class="experience-description">
                             <p>Product company based out of Sweden that pioneered multi touch user interface in collaborative softwares and hardware, to be used in schools for teaching, and in private organizations for facilitating ideation and implementation.</p>
-                            <p>Tech stack - typescript, nodejs, couchdb, postgresql</p>
+                            <p>Tech stack - typescript, nodejs, couchdb, postgresql, docker</p>
                             <p>
                                 Responsibilities included -
                                 <ul>
                                     <li>Revamp existing softwares to be more web friendly</li>
-                                    <li>Help move data into Postgresql for better performance</li>
-                                    <li>Help maintain the products to accommodate customer feedback</li>
-                                    <li>Be part of the core team to build a new product entirely from scratch</li>
+                                    <li>Move existing data into an RDBMS (Postgresql) from CouchDB for better structure and performance</li>
+                                    <li>Build a new product entirely from scratch. I was primarily responsible for designing and implementing the user authentication system and organization management system</li>
                                 </ul>
                             </p>
                         </div>
@@ -64,15 +63,16 @@
                                 <ul>
                                     <li>Developing and maintaining software to run the HasGeek events, including shifting to online events since COVID‐ 19. Backend stack is Flask+PostgreSQL.</li>
                                     <li>Handling support queries and fix the issues</li>
-                                    <li>Taking care of the staging/production servers and the deployments</li>
+                                    <li>Taking care of the staging/production servers and the deployments, at first using fabric scripts, and then later on using github actions</li>
                                 </ul>
                                 Some major projects ‐
                                 <ul>
                                     <li>Revamping the image management program (<a href="https://github.com/hasgeek/imgee">https://github.com/hasgeek/imgee</a>) and optimizing it's backend to handle image upload and processing more efficiently.</li>
                                     <li>Moving all existing applications to Python 3</li>
                                     <li>Adding SSL support to all domains using LetsEncrypt</li>
-                                    <li>Adding a spam reporting system for comment moderation</li>
+                                    <li>Designing and implementing a spam reporting and management system for comment moderation. Involved an automatic moderation system that considered repeated spam reports to take actions</li>
                                     <li>Adding i18n support and help add Hindi support to the website</li>
+                                    <li>Setup automated backup of Postgres databases to S3</li>
                                 </ul>
                             </p>
                         </div>
@@ -98,13 +98,15 @@
                                 <ul>
                                     <li>Gathering all the data from various sources like DB export from different govt depts, 3rd party APIs, other NGOs etc, in various formats including SQL, CSV, JSON, Oracle DB etc,</li>
                                     <li>Cleaning them up, filtering through them to get rid of redundant and dirty data, using tools like Pandas and OpenRefine, and putting them together in a PostgreSQL database.</li>
+                                    <li>Implemented a star OLAP schema to store yearly data which were often independently architected</li>
                                     <li>Then building an open API on top of it so that all that clean data can be accessed easily.</li>
                                 </ul>
-                                <li>We also gathered locations of most of the schools in Karnataka. So we built a map of them which can be searched, filtered, zoomed and panned. Built on top of PostGIS.</li>
-                                <li>We ran our own OpenStreetMap tile server.</li>
-                                <li>Also handled the servers that ran these tools and APIs.</li>
-                                <li>Helped build the Android app for field data collection</li>
-                                <li>Also worked on generating yearly PDF reports from the sanitized data to verify how students are performing year‐on‐year basis.</li>
+                                <li>We also gathered locations of most of the schools in Karnataka. So we built a map of them which can be searched, filtered, zoomed and panned. Built on top of PostGIS</li>
+                                <li>We ran our own OpenStreetMap tile server</li>
+                                <li>Managing the servers that ran these tools and APIs</li>
+                                <li>Setup automated backup of Postgres databases to S3</li>
+                                <li>Helped build the Android app for field data collection, using dynamic form definition stored in the server</li>
+                                <li>Worked on generating yearly PDF reports from the sanitized data to verify how students are performing year‐on‐year basis which were then supplied to MPs and MLAs to improve school infra and make educational reform decision</li>
                             </ul>
                         </div>
                     </div>
